@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 3 Different Ways to add CSS:
+    1-- Inline
+    2-- Internal
+    3-- External -->
+    <title>CSS Introduction</title>
+
+    <!--This is External css Code -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        div {
+            margin: 10px;
+        }
+
+        .resetBtn {
+            color: Green;
+        }
+        /*This is internal css Code */
+        .internalcss {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!--INLINE CSS Example -->
+    <h1 style="color: red;" >This is Inline CSS</h1>
+
+    <!--INTERNAL CSS Example -->
+    <h1 class="internalcss">This is Internal CSS</h1>
+
+    <!--EXTERNAL CSS Example -->
+    <h1 class="externalcss">This is External CSS</h1>
+
+    <form onsubmit="specialFunction()" method="Post" target="_blank" autocomplete="on">
+
+    <div>
+        <label for="fname">First Name</label>
+        <input id="fname" type="text" placeholder="Jim" />
+    </div>
+
+    <div>
+        <label for="lname">Last Name</label>
+        <input id="lname" type="text" placeholder="Carry" />
+    </div>
+
+    <div>
+        <label for="dob">Enter your Date of Birth</label>
+        <input id="dob" type="date" value="dob" min="01//01/1990" max="12/31/2022">
+    </div>
+
+    <div>
+        <label for="email">Email-ID</label>
+        <input id="email" type="email" placeholder="xyz@gmail.com" />
+    </div>
+
+    <div>
+        <label for="phone">Mobile No.</label>
+        <input id="phone" type="tel" />
+    </div>
+
+    <div>
+        <label for="password">Password</label>
+        <input id="password" type="password" />
+    </div>
+
+    <div>
+        <label for="level">What is your current skill level in coding:</label>
+
+        <select id="level" name="level">
+
+            <option value="0">Im a Biginner</option>
+            <option value="1">Im a Intermediate</option>
+            <option value="2">Im a Expert</option>
+            <option value="3">Just tell me What to Do!!</option>
+        </select>
+    </div>
+    
+    <div>
+        <label for="membership">Which Membership would you like:</label>
+
+        <div>
+            <input id="free" type="radio" name="membership" value="free" />
+            <label for="free">Join for Free</label><br>
+
+            <input id="platinum" type="radio" name="membership" value="platinum" />
+            <label for="platinum">I want to join Platinum</label><br>
+
+            <input id="diamond" type="radio" name="membership" value="diamond" checked />
+            <label for="diamond">I want to join Diamond</label>
+        </div>
+    </div>
+
+    <div>
+        <label for="reason">Why you want to join?</label>
+
+        <div>
+            <input id="love" type="checkbox" name="reason" value="love" />
+            <label for="love">I love React!!</label><br>
+
+            <input id="community" type="checkbox" name="reason" value="community" />
+            <label for="community">I want to be the part of an awesome Community</label><br>
+
+            <input id="job" type="checkbox" name="reason" value="job" />
+            <label for="job">I want to land a Job</label><br>
+
+            <input id="skills" type="checkbox" name="reason" value="skills" />
+            <label for="skills">I want to push my current coding Skills!!</label>
+        </div>
+    </div>
+
+    <input type="file" />
+
+    <div>
+        <button class="resetBtn" type="reset">RESET</button>
+        <button type="submit">Submit</button>
+    </div>
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
